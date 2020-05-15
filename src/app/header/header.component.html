@@ -1,0 +1,19 @@
+<div class="header">
+    <a href="#default" class="logo">shopAnything</a>
+    <div>
+      <p-autoComplete [(ngModel)]="text" [suggestions]="results" (completeMethod)="search($event)" [dropdown]="true" field="productName"></p-autoComplete>
+    </div>
+    <div class="header-right">
+      <!-- <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item" mdbDropdown>
+          <a class="nav-link waves-effect dropdown-toggle" mdbDropdownToggle> -->
+            <!-- [routerLink]="['shopping-cart']" -->
+            <!-- <i class="fas fa-shopping-bag"></i>
+            <span class="clearfix d-none d-sm-inline-block"> Wishlist </span>
+          </a>
+          <app-wishlist-entries class="dropdown-menu dropdown-cart mr-5 pb-0"></app-wishlist-entries>
+      </ul> -->
+      <i class="fa fa-shopping-bag fa-2x" (click)="openWishlistPage()" style="margin-right: 8px;"></i>
+      <i class="fa fa-shopping-cart fa-2x" (click)="openCartPage()"></i>
+    </div>
+  </div>
